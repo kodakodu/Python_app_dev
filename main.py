@@ -4,7 +4,7 @@ from PyQt5.QtWidgets import QApplication,QWidget,QLabel,QPushButton,QVBoxLayout,
 #App settings
 app = QApplication([])
 main_window = QWidget()
-main_window.setWindowTitle("My first App")
+main_window.setWindowTitle("Random Word Maker")
 main_window.resize(300,200)
 
 #Create all Object/Widget below here
