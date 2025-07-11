@@ -1,6 +1,8 @@
 from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import QApplication,QWidget,QLabel,QPushButton,QVBoxLayout,QHBoxLayout
 
+from random import choice
+
 #App settings
 app = QApplication([])
 main_window = QWidget()
@@ -17,6 +19,8 @@ text3 = QLabel("?")
 button1 =QPushButton("CLick Me")
 button2 =QPushButton("CLick Me")
 button3 =QPushButton("CLick Me")
+
+my_words = ['hello','goodbye','test','app','python','pyqt','vietnam','asia']
 
 #All design here
 master_layout = QVBoxLayout()
@@ -41,5 +45,22 @@ master_layout.addLayout(row3)
 
 main_window.setLayout(master_layout)
 
+#add Functions
+def random_word1():
+    word = choice(my_words)
+    text1.setText(word)
+
+def random_word2():
+    word = choice(my_words)
+    text2.setText(word)
+
+def random_word3():
+    word = choice(my_words)
+    text3.setText(word)
+
+# Events
+
+
+#Show/Run our App
 main_window.show()
 app.exec()
